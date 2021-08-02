@@ -215,7 +215,8 @@ export class NgxPaypalComponent implements OnChanges, OnDestroy, AfterViewInit {
                 return this.ngZone.run(() => {
                     if (config.createSubscriptionOnClient) {
                         return actions.subscription.create(config.createSubscriptionOnClient(data));
-                    }                    
+                    }
+                    return;
                 });
             };
             const onShippingChange = (data: IOnShippingChangeData, actions: IOnShippingChangeActions) => {
@@ -248,6 +249,7 @@ export class NgxPaypalComponent implements OnChanges, OnDestroy, AfterViewInit {
                             });
                             return;
                         }
+                        return;
                     });
                 },
                 onError: (error: any) => {
