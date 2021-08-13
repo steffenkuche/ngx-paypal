@@ -56,7 +56,7 @@ export class PayPalScriptService {
                 name: 'intent',
                 value: config.intent
             });
-        }        
+        }
 
         if (config.extraParams) {
             params.push(...config.extraParams);

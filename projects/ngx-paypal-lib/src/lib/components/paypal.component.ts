@@ -166,6 +166,7 @@ export class NgxPaypalComponent implements OnChanges, OnDestroy, AfterViewInit {
     }
 
     private initPayPalScript(config: IPayPalConfig, initPayPal: (paypal: any) => void): void {
+      console.log("init script");
         this.paypalScriptService.registerPayPalScript({
             clientId: config.clientId,
             commit: config.advanced && config.advanced.commit ? config.advanced.commit : undefined,
@@ -184,6 +185,7 @@ export class NgxPaypalComponent implements OnChanges, OnDestroy, AfterViewInit {
     }
 
     private initPayPal(config: IPayPalConfig, paypal: any): void {
+        console.log("ran init");
         // Running outside angular zone prevents infinite ngDoCheck lifecycle calls
         this.ngZone.runOutsideAngular(() => {
 
@@ -288,6 +290,10 @@ export class NgxPaypalComponent implements OnChanges, OnDestroy, AfterViewInit {
                 // so we only add it if it is set
                 ...(config.onShippingChange && { onShippingChange })
             };
+
+
+            console.log('button config');
+            console.log(buttonsConfig);
             paypal.Buttons(buttonsConfig).render(`#${this.payPalButtonContainerId}`);
         });
     }
