@@ -1,10 +1,14 @@
 {
-  "name": "ngx-paypal",
+
+  "name": "@doctopia/ngx-paypal",
   "version": "8.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Enngage/ngx-paypal"
+    "url": "https://github.com/steffenkuche/ngx-paypal"
+  },
+  "publishConfig": {
+    "registry": "https://repo.repsy.io/npm/doctopia/default/"
   },
   "author": "richard sustek",
   "description": "Paypal integration for Angular",
@@ -26,7 +30,7 @@
     "preventPublish": "node prevent-publish"
   },
   "peerDependencies": {
-    "@angular/common": "^12.0.5",
-    "@angular/core": "^12.0.5"
+    "@angular/common": "^13.2.4",
+    "@angular/core": "^13.2.4"
   }
 }
