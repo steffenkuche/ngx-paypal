@@ -1,7 +1,3 @@
-[![npm version](https://badge.fury.io/js/ngx-paypal.svg)](https://badge.fury.io/js/ngx-paypal)
-[![Build Status](https://api.travis-ci.org/Enngage/ngx-paypal.svg?branch=master)](https://travis-ci.org/Enngage/ngx-paypal)
-[![NPM](https://nodei.co/npm/ngx-paypal.png?mini=true)](https://nodei.co/npm/ngx-paypal/)
-
 ## Angular PayPal
 
 PayPal integration for Angular. For live example and documentation visit [https://enngage.github.io/ngx-paypal/](https://enngage.github.io/ngx-paypal/)
