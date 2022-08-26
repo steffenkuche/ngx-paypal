@@ -8,7 +8,7 @@ PayPal integration for Angular. For live example and documentation visit [https:
 
 ## Installation
 
-```javascript
+```bash
 npm install ngx-paypal --save
 ```
 
@@ -316,13 +316,3 @@ Under `projects\ngx-paypal-lib` run
 ```
 npm run publish-lib
 ```
-
-### Publishing demo app
-
-Under root, generate demo app with
-
-```
-npm run build-demo-gh-pages
-npx ngh --dir=dist-demo
-```
-
